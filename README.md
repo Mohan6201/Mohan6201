@@ -1,4 +1,4 @@
-<h1 align="center">👋 Hey, I'm Mohan Jaga</h1>
+<h1 align="center">👋 Hey, I'm Mohana Srinivasan</h1>
 <h3 align="center"> DevOps Engineer | Cloud & Infrastructure Specialist | Automation Enthusiast</h3>
 
 ---
@@ -101,7 +101,8 @@ I'm a passionate DevOps Engineer focused on building secure, scalable cloud infr
 
 <p align="center" style="display: flex; justify-content: center; gap: 30px;"> 
   <a href="https://www.github.com/Mohan6201"><img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" width="32" height="32" /></a> &nbsp &nbsp
-  <a href="http://www.instagram.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> &nbsp &nbsp
+  <a href="http://www.instagram.com/"><img src="actual_icon.ico" width="32" height="32" /></a> &nbsp &nbsp
+  <!-- <a href="http://www.instagram.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> &nbsp &nbsp -->
   <a href="https://www.linkedin.com/in/Mohan6201"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
 </p>
 
