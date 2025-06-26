@@ -31,7 +31,7 @@ I'm a passionate DevOps Engineer focused on building secure, scalable cloud infr
 
 ## 🧰 My Toolbox
 
-<table>
+<table align="center">
   <tr>
     <td valign="top"><strong>☁️ Cloud & Infrastructure</strong>
       <ul>
