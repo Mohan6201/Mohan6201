@@ -5,29 +5,34 @@ on:
     - cron: '0 0 * * *'   # daily
   workflow_dispatch:
   push:
-    branches: [ master ]
+    branches: [ main ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
     steps:
-      - uses: actions/checkout@v3
+      - name: ⬇️ Checkout Repository
+        uses: actions/checkout@v3
 
-      # If you have a published CLI, you can call it with npx:
-      - name: Generate SVG via npx
-        run: |
-          npx @platane/snk-cli Mohan6201 \
-            --format svg \
-            --snake-color "#FF4500" \
-            --bg-color "transparent" \
-            --day-labels Mon,Tue,Wed,Thu,Fri,Sat,Sun \
-            --month-labels Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec \
-            --output dist/github-snake.svg
+      - name: 🐍 Generate Snake SVG (light & dark)
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: Mohan6201
+          outputs: |
+            dist/github-snake.svg
+            dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake-ocean.svg?palette=github-ocean
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
+          commit_message: "✨ Auto-update custom snake"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
