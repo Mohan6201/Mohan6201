@@ -1,39 +1,32 @@
-name: 🐍 Generate Snake Contribution Animation
+name: 🐍 Custom Contribution Snake
 
 on:
   schedule:
-    - cron: "0 */12 * * *"  # Runs every 12 hours
+    - cron: '0 0 * * *'  # daily run
   workflow_dispatch:
   push:
-    branches:
-      - master
+    branches: [ main ]
 
 jobs:
-  generate-snake:
+  build:
     runs-on: ubuntu-latest
-    permissions:
-      contents: write
-
     steps:
-      - name: ⬇️ Checkout Repository
-        uses: actions/checkout@v3
-
-      - name: 🐍 Generate Snake SVG (light & dark)
-        uses: Platane/snk@v3
+      - uses: actions/checkout@v3
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
         with:
-          github_user_name: Mohan6201
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake-ocean.svg?palette=github-ocean
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-
-      - name: 🚀 Deploy to GitHub Pages
+          node-version: '16'
+      - name: Install & Build
+        run: |
+          npm install
+          npm run build
+      - name: Generate SVG
+        run: |
+          npx snk-cli Mohan6201 --format svg --output dist/github-snake.svg
+      - name: Deploy to Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "✨ Auto-update snake contribution animation"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
