@@ -101,7 +101,7 @@ I'm a passionate DevOps Engineer focused on building secure, scalable cloud infr
 
 <p align="center" style="display: flex; justify-content: center; gap: 30px;"> 
   <a href="https://www.github.com/Mohan6201"><img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" width="32" height="32" /></a> &nbsp &nbsp
-  <a href="http://www.instagram.com/"><img src="actual_icon.ico" width="32" height="32" /></a> &nbsp &nbsp
+  <a href="https://ms-portfolio-caee4.web.app"><img src="actual_icon.ico" width="36" height="36" /></a> &nbsp &nbsp
   <!-- <a href="http://www.instagram.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> &nbsp &nbsp -->
   <a href="https://www.linkedin.com/in/Mohan6201"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
 </p>
