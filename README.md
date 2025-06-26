@@ -24,7 +24,7 @@ I'm a passionate DevOps Engineer focused on building secure, scalable cloud infr
 - 🌱 Learning: Serverless patterns, advanced Docker networking  
 
 <p align="center">
-  <img src="git.gif" alt="Working animation" width="400"/>
+  <img src="git.gif" alt="Working animation" width="800"/>
 </p>
 
 ---
@@ -99,16 +99,10 @@ I'm a passionate DevOps Engineer focused on building secure, scalable cloud infr
 
 ## 🔗 Connect with Me
 
-<p align="center">
-  <a href="https://ms-portfolio-caee4.web.app/" target="_blank" style="margin: 0 30px;">
-    <img src="actual_icon.ico" alt="Portfolio" width="50" />
-  </a>
-  <a href="https://www.linkedin.com/Mohan6201" target="_blank" style="margin: 0 30px;">
-    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg" alt="LinkedIn" width="50" />
-  </a>
-  <a href="https://github.com/Mohan6201" target="_blank" style="margin: 0 30px;">
-    <img src="https://cdn-icons-png.flaticon.com/512/25/25231.png" alt="GitHub" width="50" />
-  </a>
+<p align="center" style="display: flex; justify-content: center; gap: 30px;"> 
+  <a href="https://www.github.com/Mohan6201"><img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" width="32" height="32" /></a> &nbsp &nbsp
+  <a href="http://www.instagram.com/"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/instagram.svg" width="32" height="32" /></a> &nbsp &nbsp
+  <a href="https://www.linkedin.com/in/Mohan6201"><img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="32" height="32" /></a>
 </p>
 
 ---
