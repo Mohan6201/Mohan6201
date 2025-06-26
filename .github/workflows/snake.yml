@@ -1,11 +1,11 @@
-name: 🐍 Custom Contribution Snake
+name: 🐍 Generate Custom Snake via Docker
 
 on:
   schedule:
-    - cron: '0 0 * * *'   # daily
+    - cron: '0 0 * * *'   # every day at midnight UTC
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
@@ -17,16 +17,22 @@ jobs:
       - name: ⬇️ Checkout Repository
         uses: actions/checkout@v3
 
-      - name: 🐍 Generate Snake SVG (light & dark)
-        uses: Platane/snk/svg-only@v3
-        with:
-          github_user_name: Mohan6201
-          outputs: |
-            dist/github-snake.svg
-            dist/github-snake-dark.svg?palette=github-dark
-            dist/github-snake-ocean.svg?palette=github-ocean
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: 📁 Ensure output folder
+        run: mkdir -p dist
+
+      - name: 🐳 Generate Snake SVG (via Docker)
+        run: |
+          docker run --rm \
+            -v "${{ github.workspace }}/dist:/out" \
+            platane/snk:3.0.0 \
+            Mohan6201 \
+            --format svg \
+            --snake-color "#FF4500" \
+            --bg-color "transparent" \
+            --day-labels "Mon,Tue,Wed,Thu,Fri,Sat,Sun" \
+            --month-labels "Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec" \
+            --show-year \
+            --out /out/github-snake.svg
 
       - name: 🚀 Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0

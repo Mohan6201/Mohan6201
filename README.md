@@ -112,7 +112,7 @@ I'm a passionate DevOps Engineer focused on building secure, scalable cloud infr
 
 <p align="center">
   <picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Mohan6201/Mohan6201/raw/output/github-snake-dark.svg" />
+  <source media="(prefers-color-scheme: dark)" srcset="https://github.com/Mohan6201/Mohan6201/raw/output/github-snake.svg?palette=github-dark" />
   <img alt="Custom Snake Contribution Graph" src="https://github.com/Mohan6201/Mohan6201/raw/output/github-snake.svg" />
   </picture>
 </p>
