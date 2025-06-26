@@ -9,7 +9,7 @@ on:
       - master
 
 jobs:
-  build:
+  generate-snake:
     runs-on: ubuntu-latest
     permissions:
       contents: write
@@ -18,21 +18,22 @@ jobs:
       - name: ⬇️ Checkout Repository
         uses: actions/checkout@v3
 
-      - name: 🐍 Generate Snake SVG & Dark Mode
+      - name: 🐍 Generate Snake SVG (light & dark)
         uses: Platane/snk@v3
         with:
           github_user_name: Mohan6201
           outputs: |
             dist/github-snake.svg
             dist/github-snake-dark.svg?palette=github-dark
+            dist/github-snake-ocean.svg?palette=github-ocean
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
-      - name: 🚀 Deploy Snake to GitHub Pages (output branch)
+      - name: 🚀 Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
           build_dir: dist
-          commit_message: "🟢 Auto-update snake contribution animation"
+          commit_message: "✨ Auto-update snake contribution animation"
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
