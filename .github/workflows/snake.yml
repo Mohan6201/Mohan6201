@@ -2,28 +2,29 @@ name: 🐍 Custom Contribution Snake
 
 on:
   schedule:
-    - cron: '0 0 * * *'  # daily run
+    - cron: '0 0 * * *'   # daily
   workflow_dispatch:
   push:
-    branches: [ main ]
+    branches: [ master ]
 
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - name: Setup Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: '16'
-      - name: Install & Build
+
+      # If you have a published CLI, you can call it with npx:
+      - name: Generate SVG via npx
         run: |
-          npm install
-          npm run build
-      - name: Generate SVG
-        run: |
-          npx snk-cli Mohan6201 --format svg --output dist/github-snake.svg
-      - name: Deploy to Pages
+          npx @platane/snk-cli Mohan6201 \
+            --format svg \
+            --snake-color "#FF4500" \
+            --bg-color "transparent" \
+            --day-labels Mon,Tue,Wed,Thu,Fri,Sat,Sun \
+            --month-labels Jan,Feb,Mar,Apr,May,Jun,Jul,Aug,Sep,Oct,Nov,Dec \
+            --output dist/github-snake.svg
+
+      - name: Deploy to GitHub Pages
         uses: crazy-max/ghaction-github-pages@v3.1.0
         with:
           target_branch: output
