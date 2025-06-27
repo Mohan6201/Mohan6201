@@ -1,5 +1,7 @@
-<h1 align="center">👋 Hey, I'm Mohana Srinivasan</h1>
-<h3 align="center"> DevOps Engineer | Cloud & Infrastructure Specialist | Automation Enthusiast</h3>
+👋 Hi there! I’m **Mohana Srinivasan**  
+🚀 DevOps Engineer • ☁️ Cloud & Infrastructure Specialist • 🤖 Automation Enthusiast  
+
+I build scalable, secure CI/CD pipelines and cloud architectures that empower teams to release faster and more reliably.
 
 ---
 
