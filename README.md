@@ -102,51 +102,19 @@ I'm a passionate DevOps Engineer focused on building secure, scalable cloud infr
 
 ## 🔗 Connect with Me
 
-<div align="center" style="position: relative; width: 300px; height: 300px; margin: auto;">
-
-  <!-- Circular border -->
-  <div style="
-    width: 100%;
-    height: 100%;
-    border: 2px dotted #ccc;
-    border-radius: 50%;
-    position: absolute;
-    top: 0;
-    left: 0;
-  "></div>
-
-  <!-- GitHub Icon - Top Left -->
-  <a href="https://www.github.com/Mohan6201" style="
-    position: absolute;
-    top: 10%;
-    left: 10%;
-    transform: translate(-50%, -50%);
-  ">
-    <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" width="60" height="60" style="border-radius: 50%; border: 2px solid #ccc; padding: 5px;" />
+<p align="center">
+  <a href="https://www.github.com/Mohan6201">
+    <img src="https://www.vectorlogo.zone/logos/github/github-tile.svg" width="60" height="60" style="border-radius: 50%;" />
   </a>
-
-  <!-- Portfolio Icon - Bottom Center -->
-  <a href="https://ms-portfolio-caee4.web.app" style="
-    position: absolute;
-    bottom: 5%;
-    left: 50%;
-    transform: translate(-50%, 50%);
-  ">
-    <img src="Actual_Logo.png" width="60" height="60" style="border-radius: 50%; border: 2px solid #ccc; padding: 5px;" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://ms-portfolio-caee4.web.app">
+    <img src="Actual_Logo.png" width="60" height="60" style="border-radius: 50%;" />
   </a>
-
-  <!-- LinkedIn Icon - Top Right -->
-  <a href="https://www.linkedin.com/in/Mohan6201" style="
-    position: absolute;
-    top: 10%;
-    right: 10%;
-    transform: translate(50%, -50%);
-  ">
-    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="60" height="60" style="border-radius: 50%; border: 2px solid #ccc; padding: 5px;" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <a href="https://www.linkedin.com/in/Mohan6201">
+    <img src="https://raw.githubusercontent.com/danielcranney/readme-generator/main/public/icons/socials/linkedin.svg" width="60" height="60" style="border-radius: 50%;" />
   </a>
-
-</div>
-
+</p>
 
 ---
 
